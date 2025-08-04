@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Factors in Academic Performance | UP Querétaro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --upq-blue: #003366;
+            --upq-gold: #CC9900;
+            --upq-light: #F5F5F5;
+            --upq-dark: #001a33;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--upq-light);
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, var(--upq-blue), var(--upq-dark));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .university {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .project-title {
+            font-size: 2.2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            padding: 0 1rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-top: 4px solid var(--upq-gold);
+        }
+        h2 {
+            color: var(--upq-blue);
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        h3 {
+            color: var(--upq-dark);
+            margin-top: 1.8rem;
+        }
+        .highlight-box {
+            background-color: rgba(0, 51, 102, 0.05);
+            border-left: 4px solid var(--upq-gold);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 2rem 0;
+        }
+        .result-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .result-card.primary {
+            border-top: 4px solid var(--upq-gold);
+            background-color: rgba(204, 153, 0, 0.05);
+        }
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .team-card {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--upq-dark);
+            color: white;
+            margin-top: 3rem;
+        }
+        .chart-placeholder {
+            background: #f0f0f0;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            color: #666;
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .project-title {
+                font-size: 1.6rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="university">POLYTECHNIC UNIVERSITY OF QUERÉTARO</div>
+        <h1 class="project-title">Key Factors Affecting Academic Performance</h1>
+    </div>
+
+    <div class="container">
+        <!-- Project Objective Section -->
+        <div class="card">
+            <h2>Project Objective</h2>
+            <p>Analyze the factors influencing students' academic performance through statistical and predictive models, identifying key variables such as study time, absences, and parental support.</p>
+            
+            <div class="highlight-box">
+                <h3>Justification</h3>
+                <p>Understanding these factors allows educational institutions, parents, and teachers to make informed decisions to improve academic outcomes, focusing resources on the most impactful aspects.</p>
+            </div>
+        </div>
+
+        <!-- Methodology Section -->
+        <div class="card">
+            <h2>Methodology</h2>
+            
+            <h3>Data Used</h3>
+            <ul>
+                <li>Educational dataset from Kaggle containing information on 2,382 students</li>
+                <li>Key variables: GPA, weekly study time, absences, parental support</li>
+                <li>Secondary variables: tutoring, extracurricular activities, parental education</li>
+            </ul>
+
+            <h3>Analytical Process</h3>
+            <ol>
+                <li><strong>Data cleaning:</strong> Filtering relevant variables</li>
+                <li><strong>Exploratory analysis:</strong> Descriptive statistics and correlation matrices</li>
+                <li><strong>Predictive modeling:</strong> Linear regression to predict GPA</li>
+                <li><strong>Visualization:</strong> Coefficient plots and heatmaps</li>
+            </ol>
+            
+            <div class="chart-placeholder">
+                [Correlation heatmap between variables]
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="card">
+            <h2>Results</h2>
+            
+            <div class="results-grid">
+                <div class="result-card primary">
+                    <h3><i class="fas fa-hands-helping"></i> Parental Support</h3>
+                    <p>Positive correlation with GPA (r = 0.19)</p>
+                    <p>Strongest positive impact in the model</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3><i class="fas fa-calendar-times"></i> Absences</h3>
+                    <p>Strong negative correlation (r = -0.32)</p>
+                    <p>Significant negative effect on GPA</p>
+                </div>
+                
+                <div class="result-card">
+                    <h3><i class="fas fa-book"></i> Study Time</h3>
+                    <p>Weak positive correlation (r = 0.18)</p>
+                    <p>Less impact than expected</p>
+                </div>
+            </div>
+            
+            <div class="chart-placeholder">
+                [Regression model coefficients chart]
+            </div>
+            
+            <h3>Validated Hypotheses</h3>
+            <ul>
+                <li><strong>H1:</strong> Parental support has a positive effect on GPA (p < 0.01)</li>
+                <li><strong>H2:</strong> Absences significantly reduce GPA (p < 0.001)</li>
+                <li><strong>H3:</strong> Study time shows positive but less significant effect (p = 0.03)</li>
+            </ul>
+        </div>
+
+        <!-- Team Section -->
+        <div class="card">
+            <h2>Project Team</h2>
+            
+            <div class="team-section">
+                <div class="team-card">
+                    <h3><i class="fas fa-user-graduate"></i> Researcher</h3>
+                    <p><strong>Ricardo Leonel Ordaz Aguilar</strong></p>
+                    <p>Student ID: 124048825</p>
+                </div>
+                
+                <div class="team-card">
+                    <h3><i class="fas fa-chalkboard-teacher"></i> Advisor</h3>
+                    <p><strong>Dr. César Isaza Bohórquez</strong></p>
+                    <p>Research Professor</p>
+                </div>
+                
+                <div class="team-card">
+                    <h3><i class="fas fa-book-open"></i> Involved Courses</h3>
+                    <ul>
+                        <li>Data Processing</li>
+                        <li>Statistical Models</li>
+                        <li>Integrator Project</li>
+                        <li>Data Structures</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>State Highway 420 s/n, El Marqués, Querétaro. C.P. 76240</p>
+        <p>Tel. (442) 5997436 | June 2025</p>
+        <p>Polytechnic University of Querétaro</p>
+    </div>
+
+    <!-- Optional visualization scripts -->
+    <script>
+        // Space to add Chart.js or other visualization library
+        console.log("Website loaded successfully");
+    </script>
+</body>
+</html>
